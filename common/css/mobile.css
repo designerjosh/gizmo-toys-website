@@ -1,0 +1,45 @@
+
+
+header nav {
+	clear: both;
+}
+
+header nav ul {
+	float: none;
+}
+
+header nav li {
+	display: block;
+}
+
+header nav li a {
+
+}
+
+header nav li a span {
+
+}
+
+header nav li a:hover {
+
+}
+
+.dropdown {
+    display: none;
+}
+
+
+.about a {
+	background: transparent url(../art/icons/about2.png) 0px 0px no-repeat;
+	background-size: cover;
+}
+
+.shop a {
+	background: transparent url(../art/icons/shop2.png) 0px 0px no-repeat;
+	background-size: cover;
+}
+
+.contact a {
+	background: transparent url(../art/icons/contact2.png) 0px 0px no-repeat;
+	background-size: cover;
+}

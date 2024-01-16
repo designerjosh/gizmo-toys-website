@@ -1,0 +1,13 @@
+@import url("reset.css");
+
+/* Default desktop styles */
+@import url("styles.css");
+
+/* Styles for very wide windows */
+@import url("widescreen.css") screen and (min-width: 1100px);
+
+/* Styles for tablet devices */
+@import url("tablet.css") screen and (max-width: 750px), screen and (max-width: 768px) and (orientation: portrait);
+
+/* Styles for mobile devices */
+@import url("mobile.css") screen and (max-width: 520px);

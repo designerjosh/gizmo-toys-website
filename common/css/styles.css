@@ -1,0 +1,1114 @@
+/*--------------------------------*\
+		STANDARD WEB FONTS
+\*--------------------------------*//*
+	
+SANS:  arial, helvetica, trebuchet ms, verdana,
+SERIF: times new roman, times, bookman, georgia, garamond, palatino
+SLAB: courier new, courier
+BOLD: impact, arial black
+
+
+/*----------------------------------*\
+			TYPEKIT FONTS
+\*----------------------------------*//*
+
+aglet-slab :: 400, 700
+proxima-soft :: 300, 400, 800
+mr-eaves-sans :: 200, 300, 700
+
+"aglet-slab", palatino, trebuchet ms, arial, sans-serif;
+"proxima-soft", arial, sans-serif;
+
+
+/*----------------------------------*\
+				COLORS
+\*----------------------------------*//*
+	
+DARK extra: #090c0f
+DARK: #21202b
+LIGHT: #e6e7e8
+
+BLUE dark: #23418d
+BLUE light: #5395c9
+
+YELLOW: #ce9d2b
+RED light: #91311e
+RED dark: #730b22
+
+*/
+
+
+/*----------------------------------*\
+				Page Layout
+\*----------------------------------*/
+
+
+img, embed, object, video {
+	max-width: 100%;
+}
+
+@media screen and (max-width: 520px) {
+	/* Example embedded Media Query */ 
+}
+
+body {
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.outerwrap {
+    width: 100%;
+}
+
+.innerwrap {
+    max-width: 1100px;
+	margin: 0 auto;
+}
+
+.sidepad {
+    width: 94%;
+}
+
+@media screen and (max-width: 520px) {
+    .sidepad {
+        width: 100%;
+    }
+}
+
+.panel {
+    text-align: center;
+}
+
+.panel div {
+    display: inline-block;
+}
+
+.row {
+	clear: both;
+	margin: 1.5em 0;
+ } 
+
+
+.row div {
+	float: left;
+	padding-left: 1em;
+	padding-right: 1.5em;
+	padding-bottom: 1em;
+	position: relative;
+	min-height: 1px;
+}
+
+.row div:first-child {
+}
+
+.row div:last-child {
+
+}
+
+div.col-1 div {
+	width: 100%;
+	float: none;
+}
+
+div.col-2 div {
+	width: 50%;
+}
+
+div.col-3 div {
+	width: 33%;
+}
+
+@media screen and (max-width: 520px) {
+    div.col-2 div {
+        width: 100%;
+    }
+}
+
+
+
+    /*---------------------*\
+        Design Components
+    \*---------------------*/
+
+.red-top {
+    border-top:  solid #730b22 8px;
+}
+
+.red-bottom {
+    border-bottom:  solid #730b22 8px;
+}
+
+.red-right {
+    border-right:  solid #730b22 8px;
+}
+
+.red-left {
+    border-left:  solid #730b22 8px;
+}
+
+.red-all {
+    border:  solid #730b22 8px;
+}
+
+.blue-top {
+    border-top:  solid #23418d 8px;
+}
+
+.blue-bottom {
+    border-bottom:  solid #23418d 8px;
+}
+
+.blue-right {
+    border-right:  solid #23418d 8px;
+}
+
+.blue-left {
+    border-left:  solid #23418d 8px;
+}
+
+.blue-all {
+    border:  solid #23418d 8px;
+}
+
+.-top {
+    border-top:  solid #5395c9 4px;
+}
+
+.-bottom {
+    border-bottom:  solid #5395c9 4px;
+}
+
+.-right {
+    border-right:  solid #5395c9 4px;
+}
+
+.-left {
+    border-left:  solid #5395c9 4px;
+}
+
+.-all {
+    border:  solid #5395c9 4px;
+}
+/*--------------------------------------------------*\
+				        Header
+\*--------------------------------------------------*/
+
+header {
+}
+
+.headerbar {
+    position: fixed;
+    width: 100%;
+    height: 48px;
+    background-color: #91311e;
+    border-bottom: solid #ce9d2b 8px;
+    z-index: 2;
+}
+
+header form input {
+    font-family: "proxima-soft", verdana, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.1em;
+    font-style: italic;
+    color: #666;
+    background-color: #e6e7e8;
+    border: solid #ce9d2b 2px;
+    border-bottom: solid #e6e7e8 2px;
+    float: left;
+    height: 25px;
+    width: 45%;
+    margin-top: 15px;
+    -webkit-transition: all .1s;
+    	transition: all .1s;
+}
+
+@media screen and (max-width: 520px) {
+    header form input {
+        width: 50%;
+        font-size: .9em;
+    }
+}
+
+header form input:focus {
+    background color: white;
+    border-color: #21202b;
+    border-bottom: solid 2px;
+    color: #21202b;
+    height: 32px;
+    margin-top: 8px;
+}
+
+.headerbar ul li {
+    display: inline-block;
+    float: right;
+    height: 40px;
+    margin: 0 1em;
+}
+
+.headerbar ul li a {
+    font-family: "proxima-soft", arial, sans-serif;
+    font-size: 1.3em;
+    text-align: right;
+    color: #e6e7e8;
+    font-weight: 400;
+    
+    display: block;
+    height: 40px;
+    transition: all .2s;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: .5em;
+    padding-left: .5em;
+}
+
+@media screen and (max-width: 520px) {
+    .headerbar ul li a {
+        padding: 0;
+        width: 50px;
+    }
+    
+    .headerbar ul li {
+        margin: 0;
+    }
+    
+    .headerbar ul li a span {
+        display: none;
+    }
+}
+
+.headerbar ul li a:hover {
+    height: 86px;
+    
+    font-weight: 400;
+    
+    background-color: #ce9d2b;
+    color: #21202b;
+}
+
+.headerbar ul .cart a {
+	background: transparent url(../art/icons/cart_icon_dark.png) 0px 0px no-repeat;
+    background-size: 50px;
+    background-position: center 35px;
+}
+
+.headerbar ul .account a {
+	background: transparent url(../art/icons/account_icon_dark.png) 0px 0px no-repeat;
+    background-size: 50px;
+    background-position: center 35px;
+}
+
+@media screen and (max-width: 520px) {
+    .headerbar ul .cart a {
+        background: transparent url(../art/icons/cart_icon_light.png) 0px 0px no-repeat;
+        background-size: 50px;
+        background-position: center center;
+    }
+    
+    .headerbar ul .account a {
+        background: transparent url(../art/icons/account_icon_light.png) 0px 0px no-repeat;
+        background-size: 50px;
+        background-position: center center;
+    }
+}
+
+
+
+header h1 {
+    display: none;
+}
+
+header h2 {
+    font-family: "aglet-slab", palatino, trebuchet ms, arial, sans-serif;
+    font-size: 1.3em;
+    text-transform: uppercase;
+/*    font-style: italic;*/
+    font-weight: 700;
+    
+    color: #21202b;
+}
+
+header h2:before {
+    content: ":: "
+}
+
+header h2:after {
+    content: " ::"
+}
+
+@media screen and (max-width: 520px) {
+    header h2 {
+        font-size: .8em;
+        padding: 1em 0;
+        text-align: center;
+    }
+}
+    
+
+.logohead {
+    padding-top: 45px;
+    background: transparent url(../art/drone_clear.png) 0 0 no-repeat;
+    background-position: right;
+}
+
+@media screen and (max-width: 520px) {
+    .logohead {
+        background-image: none;
+    }
+}
+
+        /*----------------*\
+                Logo
+        \*----------------*/
+
+
+.logohead img {
+    margin: 1em 0;
+}
+
+@media screen and (max-width: 520px) {
+    .logohead img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 1em;
+    }
+}
+
+
+        /*----------------------*\
+                Navigation
+        \*----------------------*/
+
+header nav {
+    background: #91311e;
+    border-top: solid #ce9d2b 8px;
+    border-bottom: solid #23418d 12px;
+    
+    min-height: 60px;
+}
+
+header nav ul {
+    text-align: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    height: 40px;
+    margin: 0 .2em;
+    z-index: 2;
+    
+    transition: all .2s;
+    background-color: #21202b;
+}
+
+header nav ul li a {
+    font-family: "aglet-slab", palatino, trebuchet ms, arial, sans-serif;
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: 1.3em;
+    
+    color: #e6e7e8;
+    border-right: solid #23418d 8px;
+    border-left: solid #23418d 8px;
+    
+    padding-top: 5px;
+    display: block;
+    height: 40px;
+    padding: 0 1em;
+    transition: all .2s;
+}
+
+header nav ul li a:hover {
+    height: 96px;
+    background-color: #23418d;
+}
+
+header ul .home a {
+    background: transparent url(../art/icons/home_icon_light.png) 0 0 no-repeat;
+    background-size: 50px;
+    background-position: center 40px;
+}
+
+header ul .about a {
+    background: transparent url(../art/icons/gizmo_icon_light.png) 0 0 no-repeat;
+    background-size: 50px;
+    background-position: center 40px;
+}
+
+header ul .shop a {
+    background: transparent url(../art/icons/shop_icon_light.png) 0 0 no-repeat;
+    background-size: 50px;
+    background-position: center 40px;
+}
+
+header ul .contact a {
+    background: transparent url(../art/icons/contact_icon_light.png) 0 0 no-repeat;
+    background-size: 50px;
+    background-position: center 40px;
+}
+
+@media screen and (max-width: 520px) {
+    header nav {
+        background-color: #23418d;
+        border-bottom: solid #23418d 5px;
+    }
+    
+    header nav ul li {
+        width: 100%;
+        text-align: center;
+        border-top: solid #23418d 5px;
+    }
+    
+    header nav ul li a {
+        font-size: 1.6em;
+        border-right: solid #23418d 3px;
+        border-left: solid #23418d 3px;
+    }
+    
+    header nav ul li a:hover {
+        height: 40px;
+    }
+}
+
+.breadcrumb span {
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    transform: translateY(35px);
+    z-index:1;
+    box-shadow: 2px 2px 8px rgba(0,0,0,.8);
+    margin-right: 1em;
+}
+
+.breadcrumb span.home {
+    background: #23418d url(../art/icons/home_icon_light.png) 0 0 no-repeat;
+    background-size: contain;
+}
+
+.breadcrumb span.about {
+    background: #23418d url(../art/icons/gizmo_icon_light.png) 0 0 no-repeat;
+    background-size: contain;
+}
+
+.breadcrumb span.shop {
+    background: #23418d url(../art/icons/shop_icon_light.png) 0 0 no-repeat;
+    background-size: contain;
+}
+
+.breadcrumb span.contact {
+    background: #23418d url(../art/icons/contact_icon_light.png) 0 0 no-repeat;
+    background-size: contain;
+}
+
+.breadcrumb span.account {
+    background: #23418d url(../art/icons/account_icon_light.png) 0 0 no-repeat;
+    background-size: contain;
+}
+
+.breadcrumb span.cart {
+    background: #23418d url(../art/icons/cart_icon_light.png) 0 0 no-repeat;
+    background-size: contain;
+}
+
+
+.breadcrumb {
+	color: #ce9d2b;
+    padding: 2em 1em 1em 1em;
+	font-style: italic;
+}
+
+.breadcrumb a {
+	display: inline-block;
+	font-family: "aglet-slab";
+	font-size: 1.3em;
+    text-transform: lowercase;
+	color: #91311e;
+	transition: all .2s;
+	padding-right: 7px;
+    text-shadow: 2px 2px 8px black;
+}
+
+.breadcrumb a:hover {
+	color: #ce9d2b;
+	transform: translateX(5px);
+}
+
+@media screen and (max-width: 520px) {
+    .breadcrumb {
+        font-size: .9em;
+        margin-bottom: 2em;
+    }
+    
+    .breadcrumb a {
+        display: block;
+    }
+    
+    .breadcrumb span {
+        display: block;
+        position: inherit;
+        -webkit-transform: translateY(0);
+        z-index: 0;
+        margin: 1em 0;
+    }
+}
+
+
+/*--------------------------------------------------*\
+				        Main
+\*--------------------------------------------------*/
+
+main {
+    background-color: #21202b;
+}
+
+main h1 {
+    /*    TEXT  */
+    font-family: "aglet-slab", palatino, trebuchet ms, arial, sans-serif;
+    font-size: 5em;
+    font-weight: 400;
+    letter-spacing: -.05em;
+
+    /*    LOOK  */
+    color: #e6e7e8;
+    text-shadow: 2px 2px 8px black;
+    margin-bottom: 1em;
+}
+
+main h2 {
+    font-family: "aglet-slab", palatino, trebuchet ms, arial, sans-serif;
+    font-size: 3em;
+    font-weight: 400;
+    letter-spacing: .04em;
+    
+    color: #e6e7e8;
+    text-shadow: 2px 2px 8px black;
+    
+    margin-bottom: 1em;
+}
+
+
+
+main h3 {
+    font-family: "aglet-slab", palatino, trebuchet ms, arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    
+    color: #5395c9;
+    text-shadow: 2px 2px 8px black;
+}
+
+main sub {
+    font-size: 60%;
+    vertical-align: top;
+}
+
+@media screen and (max-width: 520px) {
+    main article {
+        margin: 0 auto;
+        padding: 0 .5em;
+    }
+    main h1 {
+        font-size: 2.7em;
+    }
+    
+    main h2 {
+        font-size: 1.7em;
+        text-align: center;
+    }
+    
+    main h3 {
+        font-size: 1em;
+    }
+}
+
+
+main p {
+    font-family: "proxima-soft", arial, sans-serif;
+    font-size: 1.3em;
+    font-weight: 300;
+    line-height: 1.1em;
+    
+    color: #e6e7e8;
+    
+    padding: .8em 0;
+}
+
+.special {
+    color: #ce9d2b;
+}
+
+.special-t {
+    color: white;
+    text-shadow: 0 0 4px white;
+}
+
+.special-img {
+    box-shadow: 0 0 12px white;
+}
+
+.digits {
+    font-family: "proxima-soft", arial, sans-serif;
+    font-size: 3em;
+    font-weight: 800;
+
+    background-color: transparent;
+    color: #ce9d2b;
+    text-shadow: 2px 2px 8px black;
+    border: solid #e6e7e8 8px;
+    
+    display: block;
+    text-align: center;
+    padding: .8em 0;
+/*    margin-bottom: 1em;*/
+    width: 100%;
+}
+
+.add-cart a {
+    background: transparent url(../art/icons/cart_icon_light.png) 0 0 no-repeat;
+    background-size: contain;
+    background-position: 15px;
+}
+
+.continue-shop a {
+    background: transparent url(../art/icons/shop_icon_light.png) 0 0 no-repeat;
+    background-size: contain;
+    background-position: 15px;
+}
+
+.button {
+    border: solid #e6e7e8 8px;
+    background-color: transparent;
+    
+    padding: .4em 0;
+    width: 100%;
+    margin: 3em 0;
+    
+    transition: all .3s;
+}
+
+.button:hover {
+    border-radius: 100px;
+}
+
+.button a {
+    font-family: "aglet-slab", palatino, trebuchet ms, arial, sans-serif;
+    font-size: 3em;
+    font-weight: 400;
+    
+    color: #e6e7e8;
+    text-shadow: 2px 2px 8px black;
+    
+    display: block;
+    text-align: center;
+    padding: .8em 0;
+    
+    transition: all .2s;
+}
+
+.button a span {
+    opacity: 1;
+    
+    transition: all .1s;
+}
+
+.button:hover a span {
+    opacity: 0;
+}
+
+.button:hover a {
+    background-position: center;
+}
+
+.button:active a {
+    -webkit-transform: scale(2, 2);
+    transform: scale(2, 2);
+    opacity: 0;
+}
+
+section {
+    margin: 3em 0;
+    clear: both;
+}
+
+@media screen and (max-width: 520px) {
+    main p {
+        font-size: .9em;
+    }
+    
+    .digits {
+        padding: .3em 0;
+        font-size: 200%;
+/*        border: solid #e6e7e8 4px;*/
+    }
+    
+    .button a {
+        background-position: -200px;
+        padding: .3em 0;
+    }
+    
+    .button a:hover {
+        background-position: center;
+        
+    }
+}
+
+        /*----------------*\
+                Form
+        \*----------------*/
+
+input, textarea, select {
+	font-size: 1em;
+	border: solid #ce9d2b 3px;
+	padding: .5em;
+}
+	
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+    border-color: #21202b;
+}
+	
+textarea {
+    font-family: "proxima-soft", arial, sans-serif;
+	height: 8em;
+    width: 100%;
+}
+	
+select {
+	-webkit-appearance: none;
+	color: #21202b;
+}
+	
+.form_container {
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 600px;
+    width: 94%;
+    -webkit-transform: translateY(-.9em);
+    transform: translateY(-.9em);
+	}
+	
+fieldset {
+    margin-top: 2em;
+    padding: 2em;
+    border: solid #ce9d2b 8px;
+    background-color: #91311e;
+}
+	
+legend {
+    font-family: "aglet-slab", palatino, trebuchet ms, arial, sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    background-color: #21202b;
+    color: #e6e7e8;
+    border: solid #23418d 8px;
+    padding: .25em 1em .2em 1em;
+    margin: 0 auto;
+}
+	
+.inline dl dt, .inline dl dd {
+    display: inline-block;
+}
+	
+	
+.inline dl dt {
+    width: 25%;
+}
+	
+.inline dd {
+    width: 50%;
+}
+
+fieldset dd {
+    font-family: "proxima-soft", arial, sans-serif;
+    font-size: 1.1em;
+    color: #ce9d2b;
+    text-shadow: 1px 1px 3px black;
+    padding: .3em 0;
+}
+	
+dt label {
+    font-family: "proxima-soft", arial, sans-serif;
+    font-size: 1.3em;
+    font-weight: 300;
+    
+    color: #e6e7e8;
+    
+    line-height: 2em;
+    text-shadow: 2px 2px 8px black;
+}
+	
+input[type="radio"], input[type="checkbox"] {
+    -webkit-transform: scale(1.5, 1.5);
+}
+
+input[type="submit"] {
+    font-family: "aglet-slab", palatino, trebuchet ms, arial, sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    
+    background: transparent;
+    color: #e6e7e8;
+    text-shadow: 2px 2px 8px black;
+    border: solid #e6e7e8 8px;
+    
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: .8em;
+    padding: .8em 0;
+    
+    transition: all .2s;
+}
+
+input[type="submit"]:hover {
+    border-radius: 100px;
+}
+
+input[type="submit"]:active {
+    -webkit-transform: scale(2, 2);
+    transform: scale(2, 2);
+    opacity: 0;
+}
+
+@media screen and (max-width: 520px) {
+    .form_container {
+        width: 100%;
+        margin: 0;
+    }
+    
+    input, textarea, select {
+	   font-size: .9em;
+	   border: solid #ce9d2b 2px;
+	   padding: .1em;
+    }
+    
+    fieldset {
+        width: 100%;
+        margin-top: 1em;
+        padding: 1em;
+        border-right: none;
+        border-left: none;
+    }
+    
+    legend {
+        font-size: 1.3em;
+    }
+    
+    .inline dl dt, .inline dl dd {
+        display: block;
+    }
+	
+    .inline dl dt {
+        width: 100%;
+    }
+	
+    .inline dd {
+        width: 100%;
+    }
+    
+    input[type="submit"] {
+        font-size: 1em;
+    }
+    
+    input[type="submit"]:hover {
+    border-radius: 60px;
+    }
+}
+
+
+        /*----------------*\
+                Hero
+        \*----------------*/
+
+.hero-image .container {
+    height: 400px;
+}
+
+@media screen and (max-width: 520px) {
+    .hero-image .container {
+        height: inherit;
+    }
+}
+
+
+#slide1_container {
+    width: 100%;
+    max-width: 1100px;
+    height: 400px;
+    overflow: hidden; /* So the sliding bit doesn't stick out. */
+    margin: 0 auto;
+}
+
+#slide1_images {
+    /* This is the bit that moves. It has 4 images, so 4 * 450 = 1800. You could use javascript to work this out instead by counting images. */
+    width: 3300px;
+
+    -webkit-transition: all 1.0s ease-in-out;
+    -moz-transition: all 1.0s ease-in-out;
+    -o-transition: all 1.0s ease-in-out;
+    transition: all 1.0s ease-in-out;
+}
+
+
+#slide1_images img {
+    padding: 0;
+    margin: 0;
+    float: left; /* All the images are in a row next to each other. */
+    ;
+}
+
+#slide1_controls {
+	display: block;
+    position: absolute;
+    margin: 10px;
+}
+
+#slide1_controls span {
+    display: inline-block;
+    background-color: #e6e7e8;
+    border: solid #ce9d2b 2px;
+    margin: 0 auto;
+    width: 2em;
+    height: 2em;
+    box-shadow: inset 1px 1px 8px rgba(0,0,0,.3);
+    transition: all .2s;
+}
+
+#slide1_controls a {
+    display: none;
+}
+
+#slide1_controls span:hover {
+	background-color: #23418d;
+}
+
+
+
+        /*------------------*\
+                Images
+        \*------------------*/
+.product-img {
+    transition: all .2s;
+}
+
+.product-img:hover {
+    border-radius: 50px;
+}
+
+.product-img:active {
+    -webkit-transform: scale(2, 2);
+        transform: scale(2, 2);
+    opacity: 0;
+}
+
+.product-img a span {
+    font-family: "aglet-slab", palatino, trebuchet ms, arial, sans-serif;
+    
+    color: #23418d;
+    background: rgba(0,0,0,.5);
+    
+    position: absolute;
+    font-size: 10em;
+    font-weight: 400;
+    z-index: 1;
+    
+    width: 100%;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+}
+
+.thumbnail .container {
+    width: 300px;
+    height: 300px;
+    margin: 0 1em;
+}
+
+.thumbnail .container:hover img {
+    border-radius: 150px;
+}
+
+.thumbnail {
+    vertical-align: top;
+}
+
+.thumbnail img {
+    border: solid #23418d 8px;
+    
+    transition: all .2s;
+}
+
+.thumb-cap {
+    width: 300px;
+    text-align: left;
+    margin: .3em 1em;
+}
+
+.thumb-cap a {
+    display: block;
+    
+    color: #e6e7e8;
+}
+
+@media screen and (max-width: 520px) {
+    .thumbnail {
+        width: 84%;
+        margin-bottom: 2em;
+        margin: 0 auto;
+    }
+    
+    .thumbnail .container {
+        width: inherit;
+        max-width: 280px;
+        height: inherit;
+        max-height: 280px;
+        margin: 0 auto;
+    }
+    
+    .thumbnail .container:hover img {
+        border-radius: 50%;
+    }
+    
+    .thumb-cap {
+        text-align: center;
+        width: inherit;
+        margin: .5em 8%;
+    }
+}
+
+
+/*--------------------------------------------------*\
+				        Footer
+\*--------------------------------------------------*/
+
+footer {
+    background-color: #91311e;
+    min-height: 100px;
+    border-top: solid #23418d 8px;
+    text-align: center;
+}
+
+footer img {
+    margin: 1em 0;
+}
+
+footer p {
+    font-family: "aglet-slab", palatino, trebuchet ms, arial, sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    
+    color: #e6e7e8;
+    
+    padding: .8em 0;
+}
+
+@media screen and (max-width: 520px) {
+    footer p {
+    font-size: .8em;
+    }
+}
